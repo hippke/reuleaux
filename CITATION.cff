@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "reuleaux"
+type: software
+license: GPL-3.0-or-later
+repository-code: "https://github.com/hippke/reuleaux"
+authors:
+  - family-names: Hippke
+    given-names: Michael
+preferred-citation:
+  type: article
+  title: "The Common Overlap of Three Disks: an Exact, Backward-stable and Fast Solution for Mutual Transits and Eclipses"
+  authors:
+    - family-names: Hippke
+      given-names: Michael
+  status: in-prep
+  year: 2026

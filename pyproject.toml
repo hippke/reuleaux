@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reuleaux"
+version = "0.1.0"
+description = "Exact, backward-stable and fast area of the common overlap of three circles."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Michael Hippke", email = "michaelhippke@gmail.com" }]
+keywords = ["geometry", "circles", "venn", "exoplanets", "exomoons", "transits", "eclipses"]
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+fast = ["numba"]
+plot = ["matplotlib"]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/hippke/reuleaux"
+
+[tool.setuptools.packages.find]
+where = ["src"]
