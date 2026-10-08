@@ -15,7 +15,7 @@ Given any three circles, `reuleaux` returns the area (and centroid, boundary arc
 ## Why it is useful
 
 - **Complete.** One proof reduces the geometry to five topologies (empty, disk, lens, circular triangle, circular quadrilateral), resolved by a single directed walk along the boundary arcs. No case tree.
-- **Correct for arcs longer than π.** The classical closed forms (Fewell 2006, Kipping 2011) fail when the overlap contains more than half of a disk, by up to 66% of the area.
+- **Correct for arcs longer than π.** The classical closed forms (Fewell 2006) fail when the overlap contains more than half of a disk, by up to 66% of the area.
 - **Backward stable.** Against 50-digit references for 21,568 configurations (thin lenses, microscopic triangles, hierarchical star-planet-moon geometries), the error never exceeds 2.01 times the condition number times the unit roundoff.
 - **Fast.** 45 ns per configuration on average on one CPU core (0.26 µs in the hardest topology) with Numba.
 - **Robust against the alternatives.** Five public packages (gefera, eulerr, venn.js, matplotlib-venn, Shapely) fail on 121 to 21,568 of 40,000 test configurations through undefined values, missing topologies or lost precision. `reuleaux` fails on none.
