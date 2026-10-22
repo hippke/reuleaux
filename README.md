@@ -105,6 +105,10 @@ python paper/bench/make_figures.py     # paper figures
 
 The common overlap of three circles whose centres form an equilateral triangle, each circle passing through the other two centres, is a Reuleaux triangle: the curve of constant width named after Franz Reuleaux (1829-1905). It is the prototype of the shape this code computes, in all its deformed variants.
 
+## Contributing
+
+All my repositories embrace collaboration between humans and AI. Contributions are welcome, whether they are written by you, by an AI assistant, or by both together, and they will be handled promptly. Please open an [issue](https://github.com/hippke/reuleaux/issues) or a pull request.
+
 ## Citing
 
 Please cite the accompanying paper (in preparation); details are in [`CITATION.cff`](CITATION.cff).
